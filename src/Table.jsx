@@ -1,22 +1,16 @@
 import React from "react";
 
 const Table = ({ data }) => {
-
-
     return (
-
         <table>
-
-            <tbody>
-
+          <tbody>
                 <tr>
                     <th>Name</th>
                     <th>Surname</th>
                     <th>E-mail</th>
-
                 </tr>
 
-                {data.map((item) => (
+              {data.map((item) => (
 
                     <tr key={item.id}>
                         <td>{item.first_name}</td>
@@ -24,10 +18,6 @@ const Table = ({ data }) => {
                         <td>{item.email}</td>
 
                     </tr>
-
-
-
-
                 ))}
 
             </tbody>
